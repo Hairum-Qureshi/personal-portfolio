@@ -30,6 +30,9 @@ export default function Navbar() {
 				>
 					Contact
 				</Link>
+				<Link href="/blog" className="hover:text-gray-300 hover:cursor-pointer">
+					Blog
+				</Link>
 			</div>
 		</nav>
 	);
