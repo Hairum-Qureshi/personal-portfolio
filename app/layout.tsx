@@ -9,6 +9,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<title>Hairum Qureshi&apos;s Portfolio</title>
+			</head>
 			<body className="relative bg-gray-950 text-gray-300 lg:w-3/5 h-screen flex flex-col m-auto p-2">
 				<header className="w-full">
 					<Navbar />
