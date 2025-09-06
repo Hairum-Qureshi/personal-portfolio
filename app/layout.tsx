@@ -8,11 +8,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="bg-gray-950 text-gray-300 w-full h-screen flex justify-center">
-				<header>
+			<body className="bg-gray-950 text-gray-300 lg:w-3/5 h-screen flex flex-col m-auto p-2">
+				<header className="w-full">
 					<Navbar />
 				</header>
-				<main className="w-3/5 p-2">{children}</main>
+				<main>{children}</main>
 			</body>
 		</html>
 	);
