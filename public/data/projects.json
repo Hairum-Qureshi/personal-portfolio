@@ -14,7 +14,8 @@
 			"Vercel",
 			"TailwindCSS",
 			"TypeScript"
-		]
+		],
+		"project_github_link": "https://github.com/hairum-qureshi/anonymous-notes"
 	},
 	{
 		"project_id": "2",
@@ -23,7 +24,8 @@
 		"project_image": "/assets/halasters-thumbnail.png",
 		"project_read_more_link": "/project-showcase/halalsters/about",
 		"project_link": "https://halalsters.vercel.app/",
-		"project_tools": ["React.js", "Vercel", "TailwindCSS", "TypeScript"]
+		"project_tools": ["React.js", "Vercel", "TailwindCSS", "TypeScript"],
+		"project_github_link": ""
 	},
 	{
 		"project_id": "3",
@@ -40,6 +42,7 @@
 			"Express.js",
 			"Node.js",
 			"EJS"
-		]
+		],
+		"project_github_link": ""
 	}
 ]
