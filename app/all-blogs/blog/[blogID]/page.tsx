@@ -30,7 +30,7 @@ export default function BlogDetails({
 			{typeof blog === "string" ? (
 				blog
 			) : blog ? (
-				<div className="my-4">
+				<div className="my-4 w-[85%] m-auto">
 					<h2 className="text-3xl font-semibold">{blog.title}</h2>
 					<p className="text-sm text-slate-500 my-3">
 						Published on: {moment(blog.createdAt).format("MMMM Do YYYY")}
