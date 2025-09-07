@@ -5,7 +5,16 @@
 		"project_description": "A full-stack website utilizing the MERN stack and CRUD operations for note-posting",
 		"project_image": "",
 		"project_read_more_link": "/project-showcase/anonymous-notes/about",
-		"project_link": "https://anonymous-notes-five.vercel.app/"
+		"project_link": "https://anonymous-notes-five.vercel.app/",
+		"project_tools": [
+			"MongoDB",
+			"Express.js",
+			"React.js",
+			"Node.js",
+			"Vercel",
+			"TailwindCSS",
+			"TypeScript"
+		]
 	},
 	{
 		"project_id": "2",
@@ -13,7 +22,8 @@
 		"project_description": "A website built with React.js for my cousins' and I's halal food business",
 		"project_image": "/assets/halasters-thumbnail.png",
 		"project_read_more_link": "/project-showcase/halalsters/about",
-		"project_link": "https://halalsters.vercel.app/"
+		"project_link": "https://halalsters.vercel.app/",
+		"project_tools": ["React.js", "Vercel", "TailwindCSS", "TypeScript"]
 	},
 	{
 		"project_id": "3",
@@ -21,6 +31,15 @@
 		"project_description": "This is a sample project description.",
 		"project_image": "",
 		"project_read_more_link": "/project-showcase/novice-ink-writers-club/about",
-		"project_link": ""
+		"project_link": "",
+		"project_tools": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Firebase",
+			"Express.js",
+			"Node.js",
+			"EJS"
+		]
 	}
 ]
