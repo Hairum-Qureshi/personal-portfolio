@@ -17,6 +17,8 @@ export default function BlogDetails({
 	const [blog, setBlog] = useState<BlogInterface | string>("");
 	const { blogID } = use(params);
 
+	// TODO - make edit button work
+
 	useEffect(() => {
 		const blogData: BlogInterface[] | null = JSON.parse(
 			localStorage.getItem("blogs") || "[]"
@@ -53,6 +55,7 @@ export default function BlogDetails({
 							<button
 								className="mr-3 text-xl hover:cursor-pointer text-yellow-300"
 								title="Edit Blog"
+								onClick={() => redirect(`/all-blogs/blog/${blogID}/edit`)}
 							>
 								<FaEdit />
 							</button>
