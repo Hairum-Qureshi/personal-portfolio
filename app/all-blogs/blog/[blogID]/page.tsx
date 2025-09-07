@@ -6,6 +6,8 @@ import moment from "moment";
 import { FaTrash } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { redirect } from "next/navigation";
+import MarkdownPreview from "@uiw/react-markdown-preview";
+import "../../../globals.css";
 
 export default function BlogDetails({
 	params
@@ -63,7 +65,13 @@ export default function BlogDetails({
 							</button>
 						</span>
 					</p>
-					<p className="my-3">{blog.body}</p>
+					<div className="prose prose-invert">
+						<MarkdownPreview
+							source={blog.body}
+							style={{ backgroundColor: "transparent" }}
+							className="markdownContainer"
+						/>
+					</div>
 				</div>
 			) : null}
 		</div>
