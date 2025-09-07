@@ -1,0 +1,26 @@
+[
+	{
+		"project_id": "1",
+		"project_title": "Anonymous Notes",
+		"project_description": "A full-stack website utilizing the MERN stack and CRUD operations for note-posting",
+		"project_image": "",
+		"project_read_more_link": "/project-showcase/anonymous-notes/about",
+		"project_link": "https://anonymous-notes-five.vercel.app/"
+	},
+	{
+		"project_id": "2",
+		"project_title": "Halalsters",
+		"project_description": "A website built with React.js for my cousins' and I's halal food business",
+		"project_image": "/assets/halasters-thumbnail.png",
+		"project_read_more_link": "/project-showcase/halalsters/about",
+		"project_link": "https://halalsters.vercel.app/"
+	},
+	{
+		"project_id": "3",
+		"project_title": "Novice Ink. Writer's Club",
+		"project_description": "This is a sample project description.",
+		"project_image": "",
+		"project_read_more_link": "/project-showcase/novice-ink-writers-club/about",
+		"project_link": ""
+	}
+]
