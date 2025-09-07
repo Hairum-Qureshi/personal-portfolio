@@ -17,7 +17,8 @@
 			"Vite"
 		],
 		"project_github_link": "https://github.com/Hairum-Qureshi/mern-crud-notes-app",
-		"project_landscape_image": "/assets/anonymous-notes-landscape.png"
+		"project_landscape_image": "/assets/anonymous-notes-landscape.png",
+		"project_about": ""
 	},
 	{
 		"project_id": "2",
@@ -34,7 +35,8 @@
 			"Vite"
 		],
 		"project_github_link": "https://github.com/Hairum-Qureshi/halalsters-website",
-		"project_landscape_image": "/assets/halalsters-landscape.png"
+		"project_landscape_image": "/assets/halalsters-landscape.png",
+		"project_about": "### Halalsters Website (Personal Project)\n\n**Halalsters** (pronounced *halal-sters*) was a small food business started by my cousins to provide authentic, homemade frozen Pakistani foods ranging from samosas to spring rolls. The business was short-lived due to kitchen space and time constraints, but I decided to create a website as a side project to give it a professional online presence.\n\nI built a **single-page application (SPA)** using:\n\n* **React** for component-based structure\n* **Vite** for fast development and builds\n* **Tailwind CSS** for utility-first styling and rapid UI prototyping\n\nThe site included:\n\n* A **menu** of available items\n* A **FAQ** section\n* **Contact information** for placing orders\n* Necessary **disclaimers**\n\n#### What Was Tricky\n\n* Making the site **mobile-friendly** while keeping it lightweight as a SPA\n* Establishing a **consistent theme** and UI that reflected the brand's food focus\n* Choosing **fonts and styles** that felt authentic yet modern — a design decision I'm particularly proud of\n\n#### What I Gained\n\n* Strengthened my **Tailwind CSS** skills in real-world responsive design\n* Improved my **mobile-first workflow**, especially testing layouts on different screen sizes\n* Practiced delivering a **polished SPA** quickly under minimal requirements\n\n#### Reflection\n\nAlthough Halalsters was paused, the project gave me practical experience in building a user-facing product that balanced functionality and branding. If the business were revived, I'd extend the site to include **online ordering and payment integration** to better serve customers."
 	},
 	{
 		"project_id": "3",
@@ -53,6 +55,7 @@
 			"EJS"
 		],
 		"project_github_link": "",
-		"project_landscape_image": ""
+		"project_landscape_image": "",
+		"project_about": ""
 	}
 ]
