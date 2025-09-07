@@ -16,7 +16,7 @@ export default function Blogs() {
 
 	return (
 		<div>
-			<div className="flex">
+			<div className="flex mt-3">
 				<div>
 					<h1 className="text-2xl font-semibold">All Blogs</h1>
 				</div>

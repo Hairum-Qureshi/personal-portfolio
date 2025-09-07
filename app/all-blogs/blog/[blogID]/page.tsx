@@ -2,6 +2,7 @@
 
 import React, { use, useEffect, useState } from "react";
 import { Blog as BlogInterface } from "../../../interfaces";
+import moment from "moment";
 
 export default function BlogDetails({
 	params
@@ -10,6 +11,8 @@ export default function BlogDetails({
 }) {
 	const [blog, setBlog] = useState<BlogInterface | string>("");
 	const { blogID } = use(params);
+
+	// TODO - need to add delete and maybe edit functionality
 
 	useEffect(() => {
 		const blogData: BlogInterface[] | null = JSON.parse(
@@ -24,13 +27,15 @@ export default function BlogDetails({
 
 	return (
 		<div className="text-white">
-			Details for blog with ID: {blogID} <br />
 			{typeof blog === "string" ? (
 				blog
 			) : blog ? (
-				<div>
-					<h2>{blog.title}</h2>
-					<p>{blog.body}</p>
+				<div className="my-4">
+					<h2 className="text-3xl font-semibold">{blog.title}</h2>
+					<p className="text-sm text-slate-500 my-3">
+						Published on: {moment(blog.createdAt).format("MMMM Do YYYY")}
+					</p>
+					<p className="my-3">{blog.body}</p>
 				</div>
 			) : null}
 		</div>
