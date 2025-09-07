@@ -13,7 +13,8 @@
 			"Node_JS",
 			"Vercel",
 			"TailwindCSS",
-			"TypeScript"
+			"TypeScript",
+			"Vite"
 		],
 		"project_github_link": "https://github.com/Hairum-Qureshi/mern-crud-notes-app",
 		"project_landscape_image": "/assets/anonymous-notes-landscape.png"
@@ -25,7 +26,13 @@
 		"project_image": "/assets/halasters-thumbnail.png",
 		"project_read_more_link": "/project-showcase/halalsters/about",
 		"project_link": "https://halalsters.vercel.app/",
-		"project_tools": ["React_JS", "Vercel", "TailwindCSS", "TypeScript"],
+		"project_tools": [
+			"React_JS",
+			"Vercel",
+			"TailwindCSS",
+			"TypeScript",
+			"Vite"
+		],
 		"project_github_link": "https://github.com/Hairum-Qureshi/halalsters-website",
 		"project_landscape_image": "/assets/halalsters-landscape.png"
 	},
