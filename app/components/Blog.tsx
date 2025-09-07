@@ -3,7 +3,7 @@ import moment from "moment";
 
 export default function Blog({ blog }: { blog: BlogInterface }) {
 	return (
-		<div className="my-7 border border-slate-600 rounded-md p-3 hover:cursor-pointer shadow-[0_0_10px_rgba(56,189,248,0.4)] ">
+		<div className="my-7 border border-slate-600 rounded-md p-3 hover:cursor-pointer shadow-[0_0_10px_rgba(56,189,248,0.4)] bg-gray-900">
 			<h2 className="text-xl mb-2 font-semibold">{blog.title}</h2>
 			<p className="text-slate-500">
 				Posted on:{" "}
