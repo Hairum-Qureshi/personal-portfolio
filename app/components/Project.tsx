@@ -8,8 +8,10 @@ import {
 	SiExpress,
 	SiTailwindcss,
 	SiTypescript,
-	SiFirebase
+	SiFirebase,
+	SiVite
 } from "react-icons/si";
+
 import { PiFileJs } from "react-icons/pi";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { JSX } from "react";
@@ -26,21 +28,22 @@ const toolIcons: Record<string, JSX.Element> = {
 	EJS: <PiFileJs className="text-yellow-500" />,
 	CSS: <IoLogoCss3 className="text-blue-500" />,
 	Firebase: <SiFirebase className="text-yellow-500" />,
-	HTML: <FaHtml5 className="text-orange-500" />
+	HTML: <FaHtml5 className="text-orange-500" />,
+	Vite: <SiVite className="text-purple-400" />
 };
 
 export default function Project({ project }: { project: ProjectInterface }) {
 	return (
 		<div className="border border-sky-800 my-3 p-4 rounded-lg shadow-md text-white">
-			<h2 className="text-xl font-semibold mb-2 bg-gray-900 px-3 py-1 border border-cyan-900 rounded-md w-full">
+			<h2 className="text-xl text-sky-500 font-semibold mb-2 bg-gray-900 px-3 py-1 border border-cyan-900 rounded-md w-full">
 				{project.project_title}
 			</h2>
 			<Image
 				src={project.project_image}
 				alt={project.project_title}
 				width={300}
-				height={400}
-				className="w-full h-auto rounded-md border border-cyan-900 mb-3"
+				height={300}
+				className="w-full h-50 rounded-md border border-cyan-900 mb-3 object-cover"
 			/>
 			<p className="mb-3 text-gray-300">{project.project_description}</p>
 
@@ -70,7 +73,7 @@ export default function Project({ project }: { project: ProjectInterface }) {
 				{project.project_tools.map((tool: string, idx: number) => (
 					<div
 						key={idx}
-						className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 border border-gray-700 shadow-[0_0_15px_rgba(56,189,248,0.5)] hover:shadow-[0_0_25px_rgba(56,189,248,0.7)] transition-shadow duration-200"
+						className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-800 border border-gray-700 shadow-[0_0_15px_rgba(56,189,248,0.5)] hover:shadow-[0_0_25px_rgba(56,189,248,0.7)] transition-shadow duration-200"
 						title={tool}
 					>
 						{toolIcons[tool] ? (
