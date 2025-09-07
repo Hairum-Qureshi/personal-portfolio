@@ -35,18 +35,20 @@ export default function PostBlog() {
 		localStorage.setItem("blogs", JSON.stringify([newBlog, ...existingBlogs]));
 		setBlogTitle("");
 		setBlogBody("");
+		setBlogAuthor("");
+		setBlogDescription("");
 
 		redirect(`/all-blogs/blog/${blogID}`);
 	}
 
 	return (
 		<div>
-			<h1 className="text-2xl font-semibold">Post a new blog</h1>
-			<div className="my-3 border border-sky-700 rounded-md p-2 text-sky-500">
+			<h1 className="text-2xl font-semibold my-4">Post a new blog</h1>
+			{/* <div className="my-3 border border-sky-700 rounded-md p-2 text-sky-500">
 				<strong>Note:</strong> This form is intentionally left publicly
 				accessible for demonstration purposes as part of my portfolio project.
 				All data is stored in local storage to emulate a database.
-			</div>
+			</div> */}
 			<div className="flex flex-col gap-3 w-full">
 				<div className="w-4/5 m-auto my-3">
 					<input
@@ -83,7 +85,7 @@ export default function PostBlog() {
 					/>
 
 					<button
-						className="flex ml-auto border border-green-600 rounded-md px-10 py-1 bg-green-800 hover:cursor-pointer"
+						className="flex ml-auto border border-green-600 rounded-md px-10 py-1 mt-3 bg-green-800 hover:cursor-pointer"
 						onClick={() => postBlog()}
 					>
 						Post
