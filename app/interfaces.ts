@@ -17,6 +17,7 @@ interface Project {
 	project_tools: string[];
 	project_github_link: string;
 	project_landscape_image: string;
+	project_about: string;
 }
 
 export type { Blog, Project };
