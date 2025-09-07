@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import {
+	englishDataset,
+	englishRecommendedTransformers,
+	RegExpMatcher
+} from "obscenity";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -14,6 +19,30 @@ export default function PostBlog() {
 	// TODO - add character limits to all the inputs and textareas
 
 	function postBlog() {
+		const matcher = new RegExpMatcher({
+			...englishDataset.build(),
+			...englishRecommendedTransformers
+		});
+
+		const matches = [
+			...(matcher.getAllMatches(blogTitle, true) || []),
+			...(matcher.getAllMatches(blogBody, true) || []),
+			...(matcher.getAllMatches(blogAuthor, true) || []),
+			...(matcher.getAllMatches(blogDescription, true) || [])
+		];
+
+		for (const match of matches) {
+			const { phraseMetadata } =
+				englishDataset.getPayloadWithPhraseMetadata(match);
+
+			if (phraseMetadata?.originalWord) {
+				alert(
+					"Please refrain from including profanity or other inappropriate language"
+				);
+				return;
+			}
+		}
+
 		if (
 			!blogTitle?.trim() ||
 			!blogBody?.trim() ||
