@@ -3,6 +3,9 @@
 import React, { use, useEffect, useState } from "react";
 import { Blog as BlogInterface } from "../../../interfaces";
 import moment from "moment";
+import { FaTrash } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
+import { redirect } from "next/navigation";
 
 export default function BlogDetails({
 	params
@@ -11,8 +14,6 @@ export default function BlogDetails({
 }) {
 	const [blog, setBlog] = useState<BlogInterface | string>("");
 	const { blogID } = use(params);
-
-	// TODO - need to add delete and maybe edit functionality
 
 	useEffect(() => {
 		const blogData: BlogInterface[] | null = JSON.parse(
@@ -25,6 +26,18 @@ export default function BlogDetails({
 		}
 	}, [blogID]);
 
+	function deleteBlog() {
+		const confirmation = confirm("Are you sure you want to delete this blog?");
+		if (confirmation) {
+			const blogs: BlogInterface[] = JSON.parse(
+				localStorage.getItem("blogs") || "[]"
+			);
+			const updatedBlogs = blogs.filter(b => b.id !== blogID);
+			localStorage.setItem("blogs", JSON.stringify(updatedBlogs));
+			redirect("/all-blogs");
+		}
+	}
+
 	return (
 		<div className="text-white">
 			{typeof blog === "string" ? (
@@ -32,8 +45,23 @@ export default function BlogDetails({
 			) : blog ? (
 				<div className="my-4 w-[85%] m-auto">
 					<h2 className="text-3xl font-semibold">{blog.title}</h2>
-					<p className="text-sm text-slate-500 my-3">
+					<p className="flex text-sm text-slate-500 my-3">
 						Published on: {moment(blog.createdAt).format("MMMM Do YYYY")}
+						<span className="ml-auto">
+							<button
+								className="mr-3 text-xl hover:cursor-pointer text-yellow-300"
+								title="Edit Blog"
+							>
+								<FaEdit />
+							</button>
+							<button
+								className="text-lg hover:cursor-pointer text-red-600"
+								onClick={() => deleteBlog()}
+								title="Delete Blog"
+							>
+								<FaTrash />
+							</button>
+						</span>
 					</p>
 					<p className="my-3">{blog.body}</p>
 				</div>
