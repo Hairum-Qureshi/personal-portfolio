@@ -12,6 +12,7 @@ interface Project {
 	project_title: string;
 	project_description: string;
 	project_image: string;
+	project_read_more_link: string;
 	project_link: string;
 }
 
