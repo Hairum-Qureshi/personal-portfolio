@@ -7,9 +7,16 @@ import { v4 as uuidv4 } from "uuid";
 export default function PostBlog() {
 	const [blogTitle, setBlogTitle] = useState("");
 	const [blogBody, setBlogBody] = useState("");
+	const [blogAuthor, setBlogAuthor] = useState("");
+	const [blogDescription, setBlogDescription] = useState("");
 
 	function postBlog() {
-		if (!blogTitle?.trim() || !blogBody?.trim()) {
+		if (
+			!blogTitle?.trim() ||
+			!blogBody?.trim() ||
+			!blogAuthor?.trim() ||
+			!blogDescription?.trim()
+		) {
 			alert("Please make sure all fields are filled in");
 			return;
 		}
@@ -19,6 +26,8 @@ export default function PostBlog() {
 		const newBlog = {
 			id: blogID,
 			title: blogTitle,
+			author: blogAuthor,
+			description: blogDescription,
 			body: blogBody,
 			createdAt: new Date().toISOString()
 		};
@@ -43,9 +52,16 @@ export default function PostBlog() {
 					<input
 						type="text"
 						placeholder="Title"
-						className="border border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none"
+						className="border border-slate-600 rounded-md p-2 mb-2 text-base w-full bg-transparent outline-none"
 						value={blogTitle}
 						onChange={e => setBlogTitle(e.target.value)}
+					/>
+					<input
+						type="text"
+						placeholder="Author"
+						className="border border-slate-600 rounded-md p-2 my-3 text-base w-full bg-transparent outline-none"
+						value={blogAuthor}
+						onChange={e => setBlogAuthor(e.target.value)}
 					/>
 					{/* <input
 						type="text"
@@ -53,8 +69,15 @@ export default function PostBlog() {
 						className="border mt-5 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none"
 					/> */}
 					<textarea
+						placeholder="Description"
+						className="border resize-y my-2 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-30 max-h-30 min-h-40"
+						value={blogDescription}
+						onChange={e => setBlogDescription(e.target.value)}
+					/>
+
+					<textarea
 						placeholder="Body"
-						className="border resize-y my-5 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-80 max-h-60 min-h-40"
+						className="border resize-y my-2 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-80 max-h-60 min-h-40"
 						value={blogBody}
 						onChange={e => setBlogBody(e.target.value)}
 					/>
