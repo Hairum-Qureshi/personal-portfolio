@@ -25,16 +25,16 @@ export default function Navbar() {
 					Project Showcase
 				</Link>
 				<Link
-					href="/contact"
-					className="hover:text-gray-300 hover:cursor-pointer"
-				>
-					Contact
-				</Link>
-				<Link
 					href="/all-blogs"
 					className="hover:text-gray-300 hover:cursor-pointer"
 				>
 					Blog
+				</Link>
+				<Link
+					href="/contact"
+					className="hover:text-gray-300 hover:cursor-pointer"
+				>
+					Contact
 				</Link>
 			</div>
 		</nav>
