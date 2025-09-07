@@ -15,6 +15,7 @@ interface Project {
 	project_read_more_link: string;
 	project_link: string;
 	project_tools: string[];
+	project_github_link: string;
 }
 
 export type { Blog, Project };
