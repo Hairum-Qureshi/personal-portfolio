@@ -8,14 +8,14 @@
 		"project_link": "https://anonymous-notes-five.vercel.app/",
 		"project_tools": [
 			"MongoDB",
-			"Express.js",
-			"React.js",
-			"Node.js",
+			"Express_JS",
+			"React_JS",
+			"Node_JS",
 			"Vercel",
 			"TailwindCSS",
 			"TypeScript"
 		],
-		"project_github_link": "https://github.com/hairum-qureshi/anonymous-notes"
+		"project_github_link": "https://github.com/Hairum-Qureshi/mern-crud-notes-app"
 	},
 	{
 		"project_id": "2",
@@ -24,8 +24,8 @@
 		"project_image": "/assets/halasters-thumbnail.png",
 		"project_read_more_link": "/project-showcase/halalsters/about",
 		"project_link": "https://halalsters.vercel.app/",
-		"project_tools": ["React.js", "Vercel", "TailwindCSS", "TypeScript"],
-		"project_github_link": ""
+		"project_tools": ["React_JS", "Vercel", "TailwindCSS", "TypeScript"],
+		"project_github_link": "https://github.com/Hairum-Qureshi/halalsters-website"
 	},
 	{
 		"project_id": "3",
@@ -39,8 +39,8 @@
 			"CSS",
 			"JavaScript",
 			"Firebase",
-			"Express.js",
-			"Node.js",
+			"Express_JS",
+			"Node_JS",
 			"EJS"
 		],
 		"project_github_link": ""
