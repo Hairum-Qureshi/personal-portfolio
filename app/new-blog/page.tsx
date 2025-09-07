@@ -1,3 +1,72 @@
+"use client";
+
+import { redirect } from "next/navigation";
+import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
 export default function PostBlog() {
-	return <div>Post blog form</div>;
+	const [blogTitle, setBlogTitle] = useState("");
+	const [blogBody, setBlogBody] = useState("");
+
+	function postBlog() {
+		if (!blogTitle?.trim() || !blogBody?.trim()) {
+			alert("Please make sure all fields are filled in");
+			return;
+		}
+
+		const blogID = uuidv4().replaceAll("-", "").slice(0, 20);
+		const existingBlogs = JSON.parse(localStorage.getItem("blogs") || "[]");
+		const newBlog = {
+			id: blogID,
+			title: blogTitle,
+			body: blogBody,
+			createdAt: new Date().toISOString()
+		};
+
+		localStorage.setItem("blogs", JSON.stringify([newBlog, ...existingBlogs]));
+		setBlogTitle("");
+		setBlogBody("");
+
+		redirect(`/all-blogs/blog/${blogID}`);
+	}
+
+	return (
+		<div>
+			<h1 className="text-2xl font-semibold">Post a new blog</h1>
+			<div className="my-3 border border-sky-700 rounded-md p-2 text-sky-500">
+				<strong>Note:</strong> This form is intentionally left publicly
+				accessible for demonstration purposes as part of my portfolio project.
+				All data is stored in local storage to emulate a database.
+			</div>
+			<div className="flex flex-col gap-3 w-full">
+				<div className="w-4/5 m-auto my-3">
+					<input
+						type="text"
+						placeholder="Title"
+						className="border border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none"
+						value={blogTitle}
+						onChange={e => setBlogTitle(e.target.value)}
+					/>
+					{/* <input
+						type="text"
+						placeholder="Tags"
+						className="border mt-5 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none"
+					/> */}
+					<textarea
+						placeholder="Body"
+						className="border resize-y my-5 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-80 max-h-60 min-h-40"
+						value={blogBody}
+						onChange={e => setBlogBody(e.target.value)}
+					/>
+
+					<button
+						className="flex ml-auto border border-green-600 rounded-md px-10 py-1 bg-green-800 hover:cursor-pointer"
+						onClick={() => postBlog()}
+					>
+						Post
+					</button>
+				</div>
+			</div>
+		</div>
+	);
 }
