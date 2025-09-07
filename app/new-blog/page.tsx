@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
@@ -9,6 +10,8 @@ export default function PostBlog() {
 	const [blogBody, setBlogBody] = useState("");
 	const [blogAuthor, setBlogAuthor] = useState("");
 	const [blogDescription, setBlogDescription] = useState("");
+
+	// TODO - add character limits to all the inputs and textareas
 
 	function postBlog() {
 		if (
@@ -76,13 +79,18 @@ export default function PostBlog() {
 						value={blogDescription}
 						onChange={e => setBlogDescription(e.target.value)}
 					/>
-
 					<textarea
 						placeholder="Body"
 						className="border resize-y my-2 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-80 max-h-60 min-h-40"
 						value={blogBody}
 						onChange={e => setBlogBody(e.target.value)}
 					/>
+					<p className="text-sky-500 text-sm">
+						This textarea supports{" "}
+						<Link href="https://www.markdownguide.org/" className="underline">
+							markdown
+						</Link>
+					</p>
 
 					<button
 						className="flex ml-auto border border-green-600 rounded-md px-10 py-1 mt-3 bg-green-800 hover:cursor-pointer"
