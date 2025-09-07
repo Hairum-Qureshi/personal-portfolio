@@ -14,6 +14,7 @@ interface Project {
 	project_image: string;
 	project_read_more_link: string;
 	project_link: string;
+	project_tools: string[];
 }
 
-export type { Blog, Project }
+export type { Blog, Project };
