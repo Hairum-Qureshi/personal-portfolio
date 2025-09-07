@@ -9,6 +9,7 @@ import {
 } from "obscenity";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import DOMPurify from "dompurify";
 
 export default function PostBlog() {
 	const [blogTitle, setBlogTitle] = useState("");
@@ -60,7 +61,7 @@ export default function PostBlog() {
 			title: blogTitle,
 			author: blogAuthor,
 			description: blogDescription,
-			body: blogBody,
+			body: DOMPurify.sanitize(blogBody),
 			createdAt: new Date().toISOString()
 		};
 
