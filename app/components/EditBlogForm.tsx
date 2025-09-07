@@ -1,25 +1,42 @@
 "use client";
 
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import { redirect, useParams } from "next/navigation";
 import {
 	englishDataset,
 	englishRecommendedTransformers,
 	RegExpMatcher
 } from "obscenity";
-import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-import DOMPurify from "dompurify";
+import { useEffect, useState } from "react";
+import { Blog } from "../interfaces";
 
 export default function EditBlogForm() {
+	const params = useParams<{ blogID: string }>();
+
 	const [blogTitle, setBlogTitle] = useState("");
 	const [blogBody, setBlogBody] = useState("");
 	const [blogAuthor, setBlogAuthor] = useState("");
 	const [blogDescription, setBlogDescription] = useState("");
 
+	useEffect(() => {
+		const blogsFromStorage = JSON.parse(localStorage.getItem("blogs") || "[]");
+		const blogData: Blog = blogsFromStorage.find(
+			(b: { id: string }) => b.id === params.blogID
+		);
+
+		if (!blogData || !blogData.id) {
+			redirect("/all-blogs");
+		}
+
+		setBlogTitle(blogData?.title || "");
+		setBlogBody(blogData?.body || "");
+		setBlogAuthor(blogData?.author || "");
+		setBlogDescription(blogData?.description || "");
+	}, [params.blogID]);
+
 	// TODO - add character limits to all the inputs and textareas
 
-	function postBlog() {
+	function editBlog() {
 		const matcher = new RegExpMatcher({
 			...englishDataset.build(),
 			...englishRecommendedTransformers
@@ -54,33 +71,31 @@ export default function EditBlogForm() {
 			return;
 		}
 
-		const blogID = uuidv4().replaceAll("-", "").slice(0, 20);
 		const existingBlogs = JSON.parse(localStorage.getItem("blogs") || "[]");
-		const newBlog = {
-			id: blogID,
-			title: blogTitle,
-			author: blogAuthor,
-			description: blogDescription,
-			body: DOMPurify.sanitize(blogBody),
-			createdAt: new Date().toISOString()
-		};
+		const blogs = existingBlogs.map((b: { id: string }) =>
+			b.id === params.blogID
+				? {
+						...b,
+						title: blogTitle,
+						body: blogBody,
+						author: blogAuthor,
+						description: blogDescription
+				  }
+				: b
+		);
 
-		localStorage.setItem("blogs", JSON.stringify([newBlog, ...existingBlogs]));
+		localStorage.setItem("blogs", JSON.stringify(blogs));
+
 		setBlogTitle("");
 		setBlogBody("");
 		setBlogAuthor("");
 		setBlogDescription("");
 
-		redirect(`/all-blogs/blog/${blogID}`);
+		redirect(`/all-blogs/blog/${params.blogID}`);
 	}
 
 	return (
 		<div>
-			{/* <div className="my-3 border border-sky-700 rounded-md p-2 text-sky-500">
-                <strong>Note:</strong> This form is intentionally left publicly
-                accessible for demonstration purposes as part of my portfolio project.
-                All data is stored in local storage to emulate a database.
-            </div> */}
 			<div className="flex flex-col gap-3 w-full">
 				<div className="w-4/5 m-auto my-3">
 					<input
@@ -123,9 +138,9 @@ export default function EditBlogForm() {
 
 					<button
 						className="flex ml-auto border border-green-600 rounded-md px-10 py-1 mt-3 bg-green-800 hover:cursor-pointer"
-						onClick={() => postBlog()}
+						onClick={() => editBlog()}
 					>
-						Post
+						Edit
 					</button>
 				</div>
 			</div>
