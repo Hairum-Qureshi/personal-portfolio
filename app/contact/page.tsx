@@ -64,8 +64,10 @@ export default function Contact() {
 			<div className="w-full flex my-7">
 				<div className="w-1/2">
 					<h3 className="font-semibold text-xl text-gray-400">
-						You can also reach me at: <br />
-						<p className="text-green-500 font-light">hairumqureshi@gmail.com</p>
+						You can also directly reach me at: <br />
+						<p className="text-green-500 font-light">
+							hairum.qqureshi@gmail.com
+						</p>
 					</h3>
 					<h3 className="font-semibold text-xl text-gray-400 mt-5">
 						Find me elsewhere:
