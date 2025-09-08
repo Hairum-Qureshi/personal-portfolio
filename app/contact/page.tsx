@@ -1,6 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Contact() {
 	const [name, setName] = useState("");
@@ -56,8 +61,49 @@ export default function Contact() {
 					feel free to reach out!
 				</p>
 			</div>
-			<div className="w-full h-1/2 my-7">
-				<form className="w-3/4 m-auto" onSubmit={sendEmail}>
+			<div className="w-full flex my-7">
+				<div className="w-1/2">
+					<h3 className="font-semibold text-xl text-gray-400">
+						You can also reach me at: <br />
+						<p className="text-cyan-400 font-light">hairumqureshi@gmail.com</p>
+					</h3>
+					<h3 className="font-semibold text-xl text-gray-400 mt-5">
+						Find me elsewhere:
+					</h3>
+					<ul className="mt-2 space-y-3 font-light">
+						<li className="flex items-center space-x-2 mt-8 mb-10">
+							<FaXTwitter className="text-2xl text-gray-300" />
+							<span className="text-gray-300">@personal_hq</span>
+						</li>
+						<li className="flex items-center space-x-2 mb-10">
+							<FaInstagram className="text-2xl text-pink-500" />
+							<span className="text-gray-300">@hq_personal</span>
+						</li>
+						<li>
+							<Link
+								href="https://github.com/Hairum-Qureshi"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center space-x-2 mb-10 text-gray-300 hover:text-gray-400 transition-colors"
+							>
+								<FaGithub className="text-2xl" />
+								<span>Hairum-Qureshi</span>
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="https://www.linkedin.com/in/hairum-qureshi/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center space-x-2 mb-10 text-gray-300 hover:text-blue-400 transition-colors"
+							>
+								<FaLinkedin className="text-2xl" />
+								<span>Hairum Qureshi</span>
+							</Link>
+						</li>
+					</ul>
+				</div>
+				<form className="w-1/2 h-1/2" onSubmit={sendEmail}>
 					<input
 						type="text"
 						placeholder="Name"
