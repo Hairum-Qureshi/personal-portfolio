@@ -131,7 +131,11 @@ export default function EditBlogForm() {
 					/>
 					<p className="text-sky-500 text-sm">
 						This textarea supports{" "}
-						<Link href="https://www.markdownguide.org/" className="underline">
+						<Link
+							href="https://www.markdownguide.org/"
+							target="_blank"
+							className="underline"
+						>
 							markdown
 						</Link>
 					</p>
