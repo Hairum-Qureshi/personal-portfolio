@@ -59,7 +59,7 @@ export default function Project({ project }: { project: ProjectInterface }) {
 					href={project.project_read_more_link}
 					className="text-sky-500 ml-2 border border-sky-600 px-3 py-1 rounded-md"
 				>
-					Read more
+					Read More
 				</Link>
 				<Link
 					href={project.project_github_link || "#"}
