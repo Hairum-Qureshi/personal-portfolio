@@ -1,0 +1,72 @@
+[
+	{
+		"date": "Summer 2019",
+		"title": "Started learning web basics",
+		"body": "Began experimenting with HTML, CSS, and JavaScript through YouTube tutorials, setting up simple static websites."
+	},
+	{
+		"date": "Fall 2019",
+		"title": "First major project: High School Club Website",
+		"body": "Built a club website using HTML, CSS, and JavaScript, with Firebase as a backend—my first time connecting a frontend to a database."
+	},
+	{
+		"date": "Spring 2020",
+		"title": "Pandemic learning sprint",
+		"body": "Refined my JavaScript skills and rebuilt the club website from scratch, learning the importance of iteration and continuous improvement."
+	},
+	{
+		"date": "January 2022",
+		"title": "First steps into backend development",
+		"body": "Dove into Node.js and Express, realizing how APIs link frontends to real-world data and broadening my scope beyond frontend-only projects."
+	},
+	{
+		"date": "August 2022",
+		"title": "Started Computer Science at UD",
+		"body": "Accepted into University of Delaware as a CS major. Gained first exposure to formal CS theory and low-level programming, which challenged me but expanded my foundations."
+	},
+	{
+		"date": "December 2022",
+		"title": "Learning React.js",
+		"body": "Explored component-based development. At first, concepts like state, props, and hooks were confusing, but once they clicked, I understood how modern apps scale."
+	},
+	{
+		"date": "2022",
+		"title": "Exploring the full stack",
+		"body": "Started combining MongoDB, Express, React, and Node.js into small applications. This marked the beginning of my full-stack development journey."
+	},
+	{
+		"date": "March 2023",
+		"title": "First hackathon (lost, but learned)",
+		"body": "Participated in UD's hackathon. My team didn’t win, but I learned to brainstorm quickly, work under pressure, and appreciate the creativity of other teams."
+	},
+	{
+		"date": "August 2023",
+		"title": "Campus jobs",
+		"body": "Became a TA for the UD computer science department and worked tech support for the business college, strengthening my communication and problem-solving skills."
+	},
+	{
+		"date": "March 2024",
+		"title": "Adopted TypeScript",
+		"body": "Transitioned my projects to TypeScript, focusing on type safety, maintainability, and scalability in web applications."
+	},
+	{
+		"date": "May 2024",
+		"title": "Shifted to TailwindCSS",
+		"body": "Moved from vanilla CSS to TailwindCSS, learning how better tooling accelerates development and ensures design consistency."
+	},
+	{
+		"date": "August 2024",
+		"title": "First full-stack MERN deployment",
+		"body": "Built and deployed an anonymous note-posting website on Vercel—my first live MERN project."
+	},
+	{
+		"date": "May 2025",
+		"title": "Shift toward independence",
+		"body": "After not being rehired as a TA, I redirected my focus to personal projects and industry preparation, sharpening my self-driven learning habits."
+	},
+	{
+		"date": "Fall 2025",
+		"title": "Capstone and internship applications",
+		"body": "Began my senior capstone project and applied to internships, targeting full-stack web development roles and practical industry experience."
+	}
+]
