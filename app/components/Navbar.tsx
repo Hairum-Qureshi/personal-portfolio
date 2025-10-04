@@ -5,36 +5,36 @@ import Link from "next/link";
 export default function Navbar() {
 	return (
 		<nav className="text-white w-full p-2 mt-4">
-			<div className="flex text-lg justify-around text-gray-400 border border-slate-700 rounded-md p-1">
+			<div className="flex text-base justify-around text-gray-400 border border-slate-800 rounded-md p-1">
 				<Link
 					href="/"
 					className="font-semibold hover:text-gray-300 hover:cursor-pointer"
 				>
-					Home
+					HAIRUM QURESHI
 				</Link>
 				<Link
 					href="/about"
 					className="hover:text-gray-300 hover:cursor-pointer"
 				>
-					About
+					ABOUT
 				</Link>
 				<Link
 					href="/project-showcase"
 					className="hover:text-gray-300 hover:cursor-pointer"
 				>
-					Project Showcase
+					PROJECT SHOWCASE
 				</Link>
 				<Link
 					href="/all-blogs"
 					className="hover:text-gray-300 hover:cursor-pointer"
 				>
-					Blog
+					BLOG
 				</Link>
 				<Link
 					href="/contact"
 					className="hover:text-gray-300 hover:cursor-pointer"
 				>
-					Contact
+					CONTACT
 				</Link>
 			</div>
 		</nav>
