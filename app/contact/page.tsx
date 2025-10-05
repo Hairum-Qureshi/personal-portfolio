@@ -61,8 +61,57 @@ export default function Contact() {
 					feel free to reach out!
 				</p>
 			</div>
-			<div className="w-full flex my-7">
-				<div className="w-1/2">
+			<div className="w-full flex space-x-4">
+				<div className="w-1/4 bg-gray-900 text-white rounded-md h-auto flex justify-center items-center p-4 border border-gray-700">
+					<div className="[writing-mode:vertical-lr] rotate-180 flex flex-col items-center gap-4">
+						<span className="text-4xl font-semibold">
+							hairum.qqureshi@gmail.com
+						</span>
+						<span className="text-xl">
+							You can also reach me directly via my email:
+						</span>
+					</div>
+				</div>
+				<div className="w-3/4">
+					<form onSubmit={sendEmail}>
+						<input
+							type="text"
+							placeholder="Name"
+							className="w-full outline-none bg-transparent p-2 border-b border-b-slate-500 my-3"
+							value={name}
+							onChange={e => setName(e.target.value)}
+						/>
+						<input
+							type="email"
+							placeholder="Your email"
+							className="w-full outline-none bg-transparent p-2 border-b border-b-slate-500 my-3"
+							value={userEmail}
+							onChange={e => setUserEmail(e.target.value)}
+						/>
+						<input
+							type="text"
+							placeholder="Subject"
+							className="w-full outline-none bg-transparent p-2 border-b border-b-slate-500 my-3"
+							value={subject}
+							onChange={e => setSubject(e.target.value)}
+						/>
+
+						<textarea
+							placeholder="Body"
+							className="border resize-none my-2 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-60"
+							value={body}
+							onChange={e => setBody(e.target.value)}
+						/>
+
+						<button
+							type="submit"
+							className="w-full border-2 border-green-600 rounded-md px-10 py-1 my-6 bg-green-800 hover:cursor-pointer"
+						>
+							Submit
+						</button>
+					</form>{" "}
+				</div>
+				{/* <div className="w-1/2">
 					<h3 className="font-semibold text-xl text-gray-400">
 						You can also directly reach me at: <br />
 						<p className="text-green-500 font-light">
@@ -105,7 +154,7 @@ export default function Contact() {
 						</li>
 					</ul>
 				</div>
-				<form className="w-1/2 h-1/2" onSubmit={sendEmail}>
+				<form className="w-2/3 h-1/2" onSubmit={sendEmail}>
 					<input
 						type="text"
 						placeholder="Name"
@@ -141,7 +190,7 @@ export default function Contact() {
 					>
 						Submit
 					</button>
-				</form>
+				</form> */}
 			</div>
 		</div>
 	);
