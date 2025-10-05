@@ -5,8 +5,12 @@ export default function Home() {
 	return (
 		<div>
 			<div className="mt-3">
-				<h1 className="font-semibold text-3xl ml-left">Hello, I&apos;m...</h1>
-				<h1 className="font-semibold text-8xl">HAIRUM QURESHI</h1>
+				<h1 className="font-semibold text-3xl ml-left lg:px-0 px-3">
+					Hello, I&apos;m...
+				</h1>
+				<h1 className="font-semibold lg:text-8xl text-7xl lg:p-0 px-3">
+					HAIRUM QURESHI
+				</h1>
 			</div>
 		</div>
 	);
