@@ -28,7 +28,7 @@ export default function Footer() {
 					<FaGithub />
 				</Link>
 				<Link
-					href="https://instagram.com/personal_hq"
+					href="https://instagram.com/hq_personal"
 					className="hover:text-fuchsia-400 hover:drop-shadow-[0_0_6px_#e879f9] transition duration-300"
 				>
 					<FaInstagram />
