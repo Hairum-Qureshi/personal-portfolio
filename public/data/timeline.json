@@ -35,19 +35,19 @@
 		"body": "Started combining MongoDB, Express, React, and Node.js into small applications. This marked the beginning of my full-stack development journey."
 	},
 	{
-		"date": "March 2023",
-		"title": "First hackathon (lost, but learned)",
-		"body": "Participated in UD's hackathon. My team didn’t win, but I learned to brainstorm quickly, work under pressure, and appreciate the creativity of other teams."
-	},
-	{
 		"date": "August 2023",
 		"title": "Campus jobs",
 		"body": "Became a TA for the UD computer science department and worked tech support for the business college, strengthening my communication and problem-solving skills."
 	},
 	{
-		"date": "March 2024",
+		"date": "January 2024",
 		"title": "Adopted TypeScript",
 		"body": "Transitioned my projects to TypeScript, focusing on type safety, maintainability, and scalability in web applications."
+	},
+	{
+		"date": "March 2024",
+		"title": "First UD hackathon (HenHacks) (lost, but learned)",
+		"body": "Participated in UD's hackathon. My team didn't win, but I learned to brainstorm quickly, work under pressure, better understand GitHub, branches, version control, and appreciate the creativity of other teams."
 	},
 	{
 		"date": "May 2024",
