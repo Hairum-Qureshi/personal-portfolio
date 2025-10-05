@@ -16,7 +16,7 @@ export default function Blogs() {
 
 	return (
 		<div>
-			<div className="flex mt-3">
+			<div className="flex mt-3 lg:m-0 mx-4">
 				<div>
 					<h1 className="text-2xl font-semibold">All Blogs</h1>
 				</div>
@@ -38,7 +38,7 @@ export default function Blogs() {
 								<Blog blog={blog} />
 							</Link>
 					  ))} */}
-				<h3 className="text-center text-sky-400 font-semibold text-xl">
+				<h3 className="text-center text-yellow-300 text-xl">
 					Blogs coming soon
 				</h3>
 			</div>
