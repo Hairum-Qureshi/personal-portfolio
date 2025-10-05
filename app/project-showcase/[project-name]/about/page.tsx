@@ -36,7 +36,7 @@ export default function Page({
 					className="object-cover"
 				/>
 			</div>
-			<div className="mt-5 w-full m-auto text-lg prose prose-invert break-words">
+			<div className="mt-5 w-full lg:m-auto text-lg px-5 lg:p-0 prose prose-invert break-words">
 				<ReactMarkdown>{projects[projectIndex].project_about}</ReactMarkdown>
 			</div>
 		</div>
