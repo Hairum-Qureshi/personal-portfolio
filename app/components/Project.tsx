@@ -34,7 +34,7 @@ const toolIcons: Record<string, JSX.Element> = {
 
 export default function Project({ project }: { project: ProjectInterface }) {
 	return (
-		<div className="border border-sky-800 my-3 p-4 rounded-lg shadow-md text-white">
+		<div className="border border-sky-600 lg:border-sky-800 my-3 p-4 rounded-lg shadow-md text-white">
 			<h2 className="text-xl text-sky-500 font-semibold mb-2 bg-gray-900 px-3 py-1 border border-cyan-900 rounded-md w-full">
 				{project.project_title}
 			</h2>
