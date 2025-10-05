@@ -20,7 +20,7 @@ export default function Blogs() {
 				<div>
 					<h1 className="text-2xl font-semibold">All Blogs</h1>
 				</div>
-				<div className="flex items-center justify-center ml-auto">
+				{/* <div className="flex items-center justify-center ml-auto">
 					<Link
 						href="/new-blog"
 						className="flex items-center justify-center text-green-500 hover:cursor-pointer px-3 py-1 border border-green-600 rounded-md"
@@ -28,16 +28,19 @@ export default function Blogs() {
 						<FaPlus />
 						&nbsp;New Blog
 					</Link>
-				</div>
+				</div> */}
 			</div>
 			<div className="flex-col my-5">
-				{!blogs?.length
+				{/* {!blogs?.length
 					? "No blogs found"
 					: blogs.map(blog => (
 							<Link href={`/all-blogs/blog/${blog.id}`} key={blog.id}>
 								<Blog blog={blog} />
 							</Link>
-					  ))}
+					  ))} */}
+				<h3 className="text-center text-sky-400 font-semibold text-xl">
+					Blogs coming soon
+				</h3>
 			</div>
 		</div>
 	);
