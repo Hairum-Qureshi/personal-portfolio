@@ -1,11 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import Link from "next/link";
 
 export default function Contact() {
 	const [name, setName] = useState("");
@@ -50,19 +45,20 @@ export default function Contact() {
 	}
 
 	return (
-		<div className="h-screen text-white">
-			<div className="w-full h-1/3 text-left flex flex-col items-center justify-center my-5">
-				<h1 className="text-7xl font-semibold text-slate-300">
+		<div className="min-h-screen text-white flex flex-col justify-center">
+			<div className="w-full lg:h-1/3 text-left flex flex-col items-center justify-center my-10 lg:my-5">
+				<h1 className="lg:text-7xl text-6xl font-semibold text-slate-300 px-2 lg:px-0">
 					Thanks for checking out <br /> my portfolio!
 				</h1>
-				<p className="m-7 text-gray-400 text-lg">
+				<p className="mt-4 px-3 lg:mt-7 lg:px-0 text-gray-400 text-lg">
 					I really appreciate you spending time to view my site. If you&apos;d
 					like to connect, either to collaborate on a project or just to chat,
 					feel free to reach out!
 				</p>
 			</div>
-			<div className="w-full flex space-x-4">
-				<div className="w-1/4 bg-gray-900 text-white rounded-md h-auto flex justify-center items-center p-4 border border-gray-700">
+
+			<div className="w-full flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4">
+				<div className="hidden lg:flex w-1/4 bg-gray-900 text-white rounded-md justify-center items-center p-4 border border-gray-700">
 					<div className="[writing-mode:vertical-lr] rotate-180 flex flex-col items-center gap-4">
 						<span className="text-4xl font-semibold">
 							hairum.qqureshi@gmail.com
@@ -72,7 +68,17 @@ export default function Contact() {
 						</span>
 					</div>
 				</div>
-				<div className="w-3/4">
+				<div className="lg:hidden block lg:flex w-full bg-gray-900 text-gray-400 justify-center items-center p-4 border border-gray-700">
+					<div className="flex flex-col items-center gap-4">
+						<span className="text-lg">
+							You can also reach me directly via my email:
+						</span>
+						<span className="text-2xl text-sky-400 font-semibold">
+							hairum.qqureshi@gmail.com
+						</span>
+					</div>
+				</div>
+				<div className="lg:w-3/4 w-full lg:p-0 p-3">
 					<form onSubmit={sendEmail}>
 						<input
 							type="text"
@@ -109,88 +115,8 @@ export default function Contact() {
 						>
 							Submit
 						</button>
-					</form>{" "}
+					</form>
 				</div>
-				{/* <div className="w-1/2">
-					<h3 className="font-semibold text-xl text-gray-400">
-						You can also directly reach me at: <br />
-						<p className="text-green-500 font-light">
-							hairum.qqureshi@gmail.com
-						</p>
-					</h3>
-					<h3 className="font-semibold text-xl text-gray-400 mt-5">
-						Find me elsewhere:
-					</h3>
-					<ul className="mt-2 space-y-3 font-light">
-						<li className="flex items-center space-x-2 mt-8 mb-10">
-							<FaXTwitter className="text-2xl text-gray-300" />
-							<span className="text-gray-300">@personal_hq</span>
-						</li>
-						<li className="flex items-center space-x-2 mb-10">
-							<FaInstagram className="text-2xl text-pink-500" />
-							<span className="text-gray-300">@hq_personal</span>
-						</li>
-						<li>
-							<Link
-								href="https://github.com/Hairum-Qureshi"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center space-x-2 mb-10 text-gray-300 hover:text-gray-400 transition-colors"
-							>
-								<FaGithub className="text-2xl" />
-								<span>Hairum-Qureshi</span>
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="https://www.linkedin.com/in/hairum-qureshi/"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center space-x-2 mb-10 text-gray-300 hover:text-blue-400 transition-colors"
-							>
-								<FaLinkedin className="text-2xl" />
-								<span>Hairum Qureshi</span>
-							</Link>
-						</li>
-					</ul>
-				</div>
-				<form className="w-2/3 h-1/2" onSubmit={sendEmail}>
-					<input
-						type="text"
-						placeholder="Name"
-						className="w-full outline-none bg-transparent p-2 border border-slate-500 rounded-md my-3"
-						value={name}
-						onChange={e => setName(e.target.value)}
-					/>
-					<input
-						type="email"
-						placeholder="Your email"
-						className="w-full outline-none bg-transparent p-2 border border-slate-500 rounded-md my-3"
-						value={userEmail}
-						onChange={e => setUserEmail(e.target.value)}
-					/>
-					<input
-						type="text"
-						placeholder="Subject"
-						className="w-full outline-none bg-transparent p-2 border border-slate-500 rounded-md my-3"
-						value={subject}
-						onChange={e => setSubject(e.target.value)}
-					/>
-
-					<textarea
-						placeholder="Body"
-						className="border resize-none my-2 border-slate-600 rounded-md p-2 text-base w-full bg-transparent outline-none h-60"
-						value={body}
-						onChange={e => setBody(e.target.value)}
-					/>
-
-					<button
-						type="submit"
-						className="w-full border-2 border-green-600 rounded-md px-10 py-1 my-6 bg-green-800 hover:cursor-pointer"
-					>
-						Submit
-					</button>
-				</form> */}
 			</div>
 		</div>
 	);
