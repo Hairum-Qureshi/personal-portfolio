@@ -26,7 +26,7 @@ export default function Navbar() {
 					href="/project-showcase"
 					className="hover:text-gray-300 hover:cursor-pointer"
 				>
-					PROJECT SHOWCASE
+					PROJECTS SHOWCASE
 				</Link>
 				<Link
 					href="/all-blogs"
@@ -70,7 +70,7 @@ export default function Navbar() {
 								className="hover:text-gray-300 hover:cursor-pointer"
 								onClick={() => setOpenedMenu(false)}
 							>
-								PROJECT SHOWCASE
+								PROJECTS SHOWCASE
 							</Link>
 							<Link
 								href="/all-blogs"
