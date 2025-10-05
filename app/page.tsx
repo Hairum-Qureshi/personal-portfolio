@@ -10,7 +10,7 @@ export default function Home() {
 					width={150}
 					height={150}
 					alt="Picture of the author"
-					className="rounded-md opacity-80 border-2 border-sky-800 object-cover"
+					className="rounded-md opacity-90 border-2 border-sky-600 object-cover shadow-[0_0_12px_#0ea5e9]"
 				/>
 
 				<h1 className="text-5xl font-bold ml-3">
