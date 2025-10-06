@@ -14,6 +14,8 @@ import { SiNestjs } from "react-icons/si";
 import { FaUser } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
+import { FaPython } from "react-icons/fa";
+import { GiBrain } from "react-icons/gi";
 
 export default function Home() {
 	return (
@@ -77,7 +79,7 @@ export default function Home() {
 						<div className="p-4 rounded-xl border border-white/10 bg-gray-900/50 transition-colors duration-300 hover:border-sky-500/50 lg:w-1/4 w-full">
 							<div className="flex flex-col items-start space-y-1">
 								<div className="flex items-center space-x-2">
-									<SiNextdotjs className="text-2xl text-white/70" />
+									<GiBrain className="text-2xl text-white/70" />
 									<span className="text-4xl font-semibold text-sky-500">
 										Next.js
 									</span>
@@ -203,6 +205,14 @@ export default function Home() {
 							</div>
 							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
 								Nest.js
+							</span>
+						</div>
+						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
+							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
+								<FaPython className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
+							</div>
+							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
+								Python
 							</span>
 						</div>
 					</div>
