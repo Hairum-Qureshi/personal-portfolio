@@ -1,21 +1,8 @@
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
-import { RiReactjsFill } from "react-icons/ri";
-import { GrGithub } from "react-icons/gr";
-import { SiTypescript } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
-import { SiPrisma } from "react-icons/si";
-import { RiSupabaseFill } from "react-icons/ri";
-import { SiFirebase } from "react-icons/si";
-import { SiNestjs } from "react-icons/si";
-import { FaUser } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
-import { IoLocation } from "react-icons/io5";
-import { FaPython } from "react-icons/fa";
+import { FaLaptopCode, FaUser } from "react-icons/fa6";
+import CoreTechList from "./components/CoreTechList";
 import { GiBrain } from "react-icons/gi";
+import { IoLocation } from "react-icons/io5";
+import CurrentlyExploringTechList from "./components/CurrentlyExploringTechList";
 
 export default function Home() {
 	return (
@@ -95,127 +82,13 @@ export default function Home() {
 					<h3 className="mb-8 text-white text-xl font-bold tracking-tight">
 						Core Technologies
 					</h3>
-					<div className="flex flex-wrap justify-center gap-3 md:gap-5 max-w-4xl mx-auto">
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiMongodb className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								MongoDB
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiExpress className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Express.js
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<RiReactjsFill className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								React.js
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<FaNodeJs className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Node.js
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<RiTailwindCssFill className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								TailwindCSS
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiTypescript className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								TypeScript
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<GrGithub className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								GitHub
-							</span>
-						</div>
-					</div>
+					<CoreTechList />
 				</div>
 				<div className="py-4">
 					<h3 className="mb-8 text-white text-xl font-bold tracking-tight">
 						Currently Exploring
 					</h3>
-					<div className="flex flex-wrap justify-center gap-3 md:gap-5 max-w-4xl mx-auto">
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiNextdotjs className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Next.js
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<FaDocker className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Docker
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiPrisma className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Prisma
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<RiSupabaseFill className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Supabase
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiFirebase className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Firebase
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<SiNestjs className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Nest.js
-							</span>
-						</div>
-						<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-							<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-								<FaPython className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-							</div>
-							<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-								Python
-							</span>
-						</div>
-					</div>
+					<CurrentlyExploringTechList />
 				</div>
 			</div>
 		</div>
