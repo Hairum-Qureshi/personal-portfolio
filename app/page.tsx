@@ -9,7 +9,7 @@ export default function Home() {
 		<div className="lg:mx-0 mx-5">
 			<div className="mt-3">
 				<h2 className="text-3xl lg:px-0 px-3">Hello, I&apos;m</h2>
-				<h1 className="font-semibold text-indigo-500 lg:text-8xl text-7xl lg:p-0 px-3 drop-shadow-[0_0_40px_rgba(155,93,229,0.9)]">
+				<h1 className="font-semibold text-indigo-500 lg:text-8xl text-8xl lg:p-0 px-3 drop-shadow-[0_0_40px_rgba(155,93,229,0.9)]">
 					Hairum Qureshi
 				</h1>
 				<h3 className="text-xl mt-1">
