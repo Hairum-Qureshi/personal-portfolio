@@ -3,6 +3,8 @@ import CoreTechList from "./components/CoreTechList";
 import { GiBrain } from "react-icons/gi";
 import { IoLocation } from "react-icons/io5";
 import CurrentlyExploringTechList from "./components/CurrentlyExploringTechList";
+import liveStatus from "../public/assets/live-status.gif";
+import Image from "next/image";
 
 export default function Home() {
 	return (
@@ -16,6 +18,14 @@ export default function Home() {
 					An emerging full-stack software engineer focused on clean, intuitive
 					design
 				</h3>
+				<h4 className="flex items-center text-green-400">
+					<Image
+						src={liveStatus}
+						alt="Animated green status bubble"
+						className="w-11 h-14 -ml-4"
+					/>
+					Currently seeking positions
+				</h4>
 				<div className="py-8">
 					<h3 className="mb-4 text-white text-xl font-bold tracking-tight">
 						Quick Facts:
