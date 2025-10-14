@@ -12,7 +12,7 @@ export default function RootLayout({
 			<head>
 				<title>Hairum Qureshi&apos;s Portfolio</title>
 			</head>
-			<body className="bg-gradient-to-br from-slate-950 to-sky-950 via-slate-950 via-slate-950 text-gray-300 lg:w-3/5 min-h-screen flex flex-col m-auto lg:p-2 break-normal">
+			<body className="bg-gradient-to-br from-slate-950 to-sky-950 via-slate-950 text-gray-300 lg:w-3/5 min-h-screen flex flex-col m-auto lg:p-2 break-normal">
 				<header className="w-full">
 					<Navbar />
 				</header>
