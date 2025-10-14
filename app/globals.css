@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
@@ -8,4 +9,8 @@ h4:hover a,
 h5:hover a,
 h6:hover a {
 	display: none !important;
+}
+
+@theme {
+	--font-garamond: "EB Garamond", serif;
 }
