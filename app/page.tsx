@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaUser } from "react-icons/fa6";
+import { FaUser, FaGraduationCap } from "react-icons/fa6";
 import CoreTechList from "./components/CoreTechList";
 import { GiBrain } from "react-icons/gi";
 import { IoLocation } from "react-icons/io5";
@@ -47,13 +47,13 @@ export default function Home() {
 						<div className="p-4 rounded-xl border border-white/10 bg-gray-900/50 transition-colors duration-300 hover:border-sky-500/50 lg:w-1/4 w-full">
 							<div className="flex flex-col items-start space-y-1">
 								<div className="flex items-center space-x-2">
-									<FaLaptopCode className="text-3xl text-white/70" />
+									<FaGraduationCap className="text-3xl text-white/70" />
 									<span className="text-4xl font-extrabold text-yellow-500">
-										{new Date().getFullYear() - 2019}
+										2026
 									</span>
 								</div>
 								<span className="text-sm font-medium text-gray-300/80 mt-[-5px]">
-									years coding
+									Graduation year
 								</span>
 							</div>
 						</div>
