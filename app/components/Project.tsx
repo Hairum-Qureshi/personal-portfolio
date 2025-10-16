@@ -11,7 +11,7 @@ import {
 	SiFirebase,
 	SiVite
 } from "react-icons/si";
-
+import { RiGeminiFill } from "react-icons/ri";
 import { PiFileJs } from "react-icons/pi";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { JSX } from "react";
@@ -29,7 +29,8 @@ const toolIcons: Record<string, JSX.Element> = {
 	CSS: <IoLogoCss3 className="text-blue-500" />,
 	Firebase: <SiFirebase className="text-yellow-500" />,
 	HTML: <FaHtml5 className="text-orange-500" />,
-	Vite: <SiVite className="text-purple-400" />
+	Vite: <SiVite className="text-purple-400" />,
+	Gemini: <RiGeminiFill className="text-sky-400" />
 };
 
 export default function Project({ project }: { project: ProjectInterface }) {
