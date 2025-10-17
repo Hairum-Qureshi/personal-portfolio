@@ -72,7 +72,8 @@
 			"TypeScript",
 			"TailwindCSS",
 			"HTML",
-			"Gemini"
+			"Gemini",
+			"Render"
 		],
 		"project_github_link": "https://github.com/Hairum-Qureshi/gradcatalog-ai",
 		"project_landscape_image": "/assets/grad-catalog-landscape.png",
