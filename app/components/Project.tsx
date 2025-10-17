@@ -9,7 +9,8 @@ import {
 	SiTailwindcss,
 	SiTypescript,
 	SiFirebase,
-	SiVite
+	SiVite,
+	SiRender
 } from "react-icons/si";
 import { RiGeminiFill } from "react-icons/ri";
 import { PiFileJs } from "react-icons/pi";
@@ -30,7 +31,8 @@ const toolIcons: Record<string, JSX.Element> = {
 	Firebase: <SiFirebase className="text-yellow-500" />,
 	HTML: <FaHtml5 className="text-orange-500" />,
 	Vite: <SiVite className="text-purple-400" />,
-	Gemini: <RiGeminiFill className="text-sky-400" />
+	Gemini: <RiGeminiFill className="text-sky-400" />,
+	Render: <SiRender className="text-white" />
 };
 
 export default function Project({ project }: { project: ProjectInterface }) {
