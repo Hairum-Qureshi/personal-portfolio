@@ -13,7 +13,6 @@ export default function Page({
 }) {
 	const resolvedParams = use(params);
 	const projectName = resolvedParams["project-name"];
-
 	const [projectIndex, setProjectIndex] = useState(-1);
 
 	useEffect(() => {
@@ -36,8 +35,10 @@ export default function Page({
 					className="object-cover"
 				/>
 			</div>
-			<div className="mt-5 w-full lg:m-auto text-lg px-5 lg:p-0 prose prose-invert break-words">
-				<ReactMarkdown>{projects[projectIndex].project_about}</ReactMarkdown>
+			<div className="w-full lg:m-auto text-lg px-5 lg:p-0 prose prose-invert break-words">
+				<div>
+					<ReactMarkdown>{projects[projectIndex].project_about}</ReactMarkdown>
+				</div>
 			</div>
 		</div>
 	);
