@@ -30,38 +30,39 @@
 			"Google Gemini"
 		]
 	},
-	"workExperience": [
-		{
-			"jobTitle": "Teaching Assistant, University of Delaware",
-			"college_department": "Computer & Information Sciences",
-			"bullets": [
-				"Provided individualized tutoring and support through weekly lab sessions and office hours.",
-				"Graded assignments and provided detailed feedback to ensure fair evaluation practices.",
-				"Assisted professors in classroom instruction and clarified coursework confusion.",
-				"Implemented innovative teaching strategies to help students grasp challenging topics."
-			],
-			"workTimeline": "August 2023 to May 2025"
-		},
-		{
-			"jobTitle": "TechDeck Support, University of Delaware",
-			"college_department": "Lerner College of Business and Economics",
-			"bullets": [
-				"Provided technical support to students and faculty at the college's computer lab.",
-				"Assisted users with troubleshooting software issues and application configurations.",
-				"Delivered personalized assistance to enhance user proficiency with college software tools."
-			],
-			"workTimeline": "September 2023 to Present"
-		}
-	],
-	"projects": [
-		"Deployed a MERN full-stack note-posting website on Vercel.",
-		"Served as a group leader for an introductory software engineering class project, utilizing React.js and OpenAI's ChatGPT API to create a unique job-searching quiz application.",
-		"Collaborated with a group to develop and extend Sage, a widely used Discord bot within the UD computer science department, contributing new features and enhancements used by students and faculty."
-	],
 	"academicProjects": [
 		"Leading a team of 5 to continue development of the Gemini AI Chatbot for the UD CIS Graduate Program, building on a previous cohort's project.",
 		"Expanded the chatbot's knowledge base by curating and adding new Q&A pairs to the underlying JSON dataset, improving accuracy and coverage of graduate program queries.",
 		"Collaborating with faculty stakeholders to test, refine, and deploy updates aligned with departmental communication needs.",
 		"Integrated and configured the chatbot within the department's WordPress site by resolving setup issues, documenting implementation steps, and modifying HTML elements to ensure proper functionality."
+	],
+	"workExperience": [
+		{
+			"jobTitle": "Teaching Assistant",
+			"college_department": "University of Delaware, Computer & Information Sciences",
+			"bullets": [
+				"Facilitated weekly lab sessions, guided programming assignments, helped with troubleshooting code issues, and hosted student-run office hours.",
+				"Assessed and provided detailed feedback on weekly programming assignments, ensuring consistent and fair evaluation practices in alignment with the course rubric.",
+				"Aided students with programming questions and clarified coursework confusion.",
+				"Used various teaching methods to help students better understand a topic they struggled with."
+			],
+			"workTimeline": "August 2023 to May 2025"
+		},
+		{
+			"jobTitle": "TechDeck Support",
+			"college_department": "University of Delaware, Lerner College of Business and Economics, Tech Deck",
+			"bullets": [
+				"Configured and troubleshot Windows and macOS operating systems, printers, and peripherals to ensure optimal functionality for academic and personal use.",
+				"Provided Level 1 technical support for institutional resources, including the campus learning management system (e.g., Canvas), email services, and course-related software.",
+				"Maintained a high level of customer satisfaction by communicating technical concepts in clear, non-technical language to users with varying levels of technical proficiency.",
+				"Troubleshot and resolved connectivity issues involving the University of Delaware’s campus network, VPN services, and wireless infrastructure."
+			],
+			"workTimeline": "September 2023 to Present"
+		}
+	],
+	"projects": [
+		"Led a 5-person team to develop a unique job-searching quiz application for a Software Engineering course. Integrated React.js with the OpenAI ChatGPT API to generate personalized results, applying the full software development agile methodologies from requirements to deployment.",
+		"Designed, developed, and maintained a responsive personal portfolio using Next.js and TailwindCSS to showcase key projects and technical skills.",
+		"Contributed new features and enhancements to Sage, a widely-used departmental Discord bot utilized by 100+ students and faculty. Practiced professional development standards, including Git version control, modular design, and Agile workflows."
 	]
 }
