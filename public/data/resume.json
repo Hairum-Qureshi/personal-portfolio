@@ -59,6 +59,9 @@
 		"Collaborated with a group to develop and extend Sage, a widely used Discord bot within the UD computer science department, contributing new features and enhancements used by students and faculty."
 	],
 	"academicProjects": [
-		"Contributed to the Gemini AI Chatbot for the UD CIS Graduate Program, building on a previous cohort's knowledge base by integrating and adding new Q&A pairs to the underlying JSON dataset, including user-friendly interfaces and modifying HTML elements."
+		"Leading a team of 5 to continue development of the Gemini AI Chatbot for the UD CIS Graduate Program, building on a previous cohort's project.",
+		"Expanded the chatbot's knowledge base by curating and adding new Q&A pairs to the underlying JSON dataset, improving accuracy and coverage of graduate program queries.",
+		"Collaborating with faculty stakeholders to test, refine, and deploy updates aligned with departmental communication needs.",
+		"Integrated and configured the chatbot within the department's WordPress site by resolving setup issues, documenting implementation steps, and modifying HTML elements to ensure proper functionality."
 	]
 }
