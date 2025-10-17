@@ -49,11 +49,11 @@ export default function Home() {
 								<div className="flex items-center space-x-2">
 									<FaGraduationCap className="text-3xl text-white/70" />
 									<span className="text-4xl font-extrabold text-yellow-500">
-										2026
+										May 2026
 									</span>
 								</div>
 								<span className="text-sm font-medium text-gray-300/80 mt-[-5px]">
-									Graduation year
+									Graduation date
 								</span>
 							</div>
 						</div>
