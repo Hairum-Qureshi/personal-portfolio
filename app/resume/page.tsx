@@ -68,7 +68,6 @@ export default function Resume() {
 								}
 							)}
 						</ul>
-						<p>Concentration: Software Engineering</p>
 					</div>
 					<div>
 						<h3 className="font-garamond text-xl mt-2 font-semibold">SKILLS</h3>
