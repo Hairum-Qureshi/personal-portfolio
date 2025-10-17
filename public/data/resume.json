@@ -7,69 +7,58 @@
 	"phoneNumber": "(302)-480-0559",
 	"email": "hqureshi@udel.edu",
 	"GPA": 3.0,
-	"programmingLanguages": ["HTML", "CSS", "JavaScript/TypeScript"],
-	"libraries": ["React.js"],
-	"frameworks": ["Next.js"],
-	"databases": ["MongoDB"],
+	"programmingLanguages": ["HTML", "CSS", "JavaScript", "TypeScript"],
+	"skills": {
+		"proficientIn": [
+			"MongoDB",
+			"Express.js",
+			"React.js",
+			"Node.js",
+			"TailwindCSS",
+			"TypeScript",
+			"GitHub",
+			"Vite",
+			"HTML",
+			"Visual Studio Code"
+		],
+		"workingKnowledgeOf": [
+			"Python",
+			"Redis",
+			"Firebase",
+			"Supabase",
+			"Next.js",
+			"Google Gemini"
+		]
+	},
 	"workExperience": [
 		{
 			"jobTitle": "Teaching Assistant, University of Delaware",
 			"college_department": "Computer & Information Sciences",
 			"bullets": [
-				{
-					"bullet1": [
-						{
-							"lead": "Provided individualized tutoring and support:",
-							"indent": "Facilitated weekly lab sessions, guided programming assignments, troubleshooting code issues, and hosted student-run office hours."
-						}
-					],
-					"bullet2": [
-						{
-							"lead": "Graded assignments and provided feedback:",
-							"indent": "Assessed and provided detailed feedback on weekly programming assignments, ensuring consistent and fair evaluation practices in alignment with the course rubric."
-						}
-					],
-					"bullet3": [
-						{
-							"lead": "Assisted professors in classroom instruction:",
-							"indent": "Aided students with programming questions and clarified coursework confusion."
-						}
-					],
-					"bullet4": [
-						{
-							"lead": "Implemented innovative teaching strategies:",
-							"indent": "Used various teaching methods to help students better understand a topic they struggled with."
-						}
-					]
-				}
+				"Provided individualized tutoring and support through weekly lab sessions and office hours.",
+				"Graded assignments and provided detailed feedback to ensure fair evaluation practices.",
+				"Assisted professors in classroom instruction and clarified coursework confusion.",
+				"Implemented innovative teaching strategies to help students grasp challenging topics."
 			],
 			"workTimeline": "August 2023 to May 2025"
 		},
 		{
-			"jobTitle": "TechDeck Support, University of Delaware ",
+			"jobTitle": "TechDeck Support, University of Delaware",
 			"college_department": "Lerner College of Business and Economics",
 			"bullets": [
-				{
-					"bullet1": [
-						{
-							"lead": "Provided technical support to students and faculty at the college's computer lab, ensuring the smooth operation of college software",
-							"indent": "Assisted users with troubleshooting software issues, including installation, configuration, and troubleshooting of various applications."
-						}
-					],
-					"bullet2": [
-						{
-							"lead": "Delivered personalized assistance to individuals encountering technical challenges, fostering a supportive and efficient learning environment within the lab",
-							"indent": "Conducted one-on-one consultations to address specific user needs and enhance their proficiency with college software tools."
-						}
-					]
-				}
+				"Provided technical support to students and faculty at the college's computer lab.",
+				"Assisted users with troubleshooting software issues and application configurations.",
+				"Delivered personalized assistance to enhance user proficiency with college software tools."
 			],
 			"workTimeline": "September 2023 to Present"
 		}
 	],
 	"projects": [
-		"Deployed a MERN full-stack note-posting website on Vercel",
-		"Was a group leader for an intro into software engineering class project, utilizing React.js and OpenAI's ChatGPT API to create a unique job-searching quiz application using the software engineering process",
-		"Collaborated with group to develop and extend Sage, a widely used Discord bot within the UD computer science department, contributing new features and enhancements used by students and faculty; emphasized version control, modular design, and agile workflows"
+		"Deployed a MERN full-stack note-posting website on Vercel.",
+		"Served as a group leader for an introductory software engineering class project, utilizing React.js and OpenAI's ChatGPT API to create a unique job-searching quiz application.",
+		"Collaborated with a group to develop and extend Sage, a widely used Discord bot within the UD computer science department, contributing new features and enhancements used by students and faculty."
+	],
+	"academicProjects": [
+		"Contributed to the Gemini AI Chatbot for the UD CIS Graduate Program, building on a previous cohort's knowledge base by integrating and adding new Q&A pairs to the underlying JSON dataset, including user-friendly interfaces and modifying HTML elements."
 	]
 }
