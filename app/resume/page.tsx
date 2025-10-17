@@ -130,7 +130,7 @@ export default function Resume() {
 				</div>
 			</div>
 			<div>
-				<a
+				<Link
 					href="/Updated Resume (2025).pdf"
 					download="HairumQureshiResume.pdf"
 					target="_blank"
@@ -145,7 +145,7 @@ export default function Resume() {
 							<FaDownload />
 						</span>
 					</button>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
