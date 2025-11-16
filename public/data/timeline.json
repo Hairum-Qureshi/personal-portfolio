@@ -30,9 +30,14 @@
 		"body": "Explored component-based development. At first, concepts like state, props, and hooks were confusing, but once they clicked, I understood how modern apps scale."
 	},
 	{
-		"date": "2022",
+		"date": "January 13, 2022",
 		"title": "Exploring the full stack",
 		"body": "Started combining MongoDB, Express, React, and Node.js into small applications. This marked the beginning of my full-stack development journey."
+	},
+	{
+		"date": "January 24, 2022",
+		"title": "Exploring MongoDB in depth",
+		"body": "Dived deeper into MongoDB, learning about data modeling, utilizing Mongoose for schema definitions, and performing CRUD operations effectively as well as how to utilize a database in a MERN stack application."
 	},
 	{
 		"date": "August 2023",
