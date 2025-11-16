@@ -43,9 +43,9 @@ export default function Resume() {
 						</div>
 						<div className="flex">
 							<p className="mr-auto">Bachelor of Computer Science</p>
-							<p className="ml-auto">
-								GPA: {resume.GPA === 3.0 ? "3.0" : resume.GPA}
-							</p>
+							{resume.GPA <= 3.0 ? null : (
+								<p className="ml-auto">GPA: {resume.GPA}</p>
+							)}
 						</div>
 						<p>Concentration: Software Engineering</p>
 					</div>
