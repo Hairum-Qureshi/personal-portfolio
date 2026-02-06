@@ -1,15 +1,8 @@
 import { FaDocker } from "react-icons/fa6";
 import { RiSupabaseFill } from "react-icons/ri";
-import {
-	SiNextdotjs,
-	SiPrisma,
-	SiFirebase,
-	SiNestjs,
-	SiVite
-} from "react-icons/si";
-import { FaPython, FaHtml5 } from "react-icons/fa";
+import { SiNextdotjs, SiPrisma, SiFirebase } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
 import { DiRedis } from "react-icons/di";
-import { TbBrandSocketIo } from "react-icons/tb";
 import { FaStripeS } from "react-icons/fa";
 
 export default function CurrentlyExploringTechList() {
@@ -55,14 +48,7 @@ export default function CurrentlyExploringTechList() {
 					Firebase
 				</span>
 			</div>
-			<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-				<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-					<SiNestjs className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-				</div>
-				<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-					Nest.js
-				</span>
-			</div>
+
 			<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
 				<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
 					<FaPython className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
@@ -77,14 +63,6 @@ export default function CurrentlyExploringTechList() {
 				</div>
 				<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
 					Redis DB
-				</span>
-			</div>
-			<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
-				<div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-900/50 shadow-lg ring-1 ring-white/10 group-hover:ring-sky-500/50">
-					<TbBrandSocketIo className="text-3xl text-gray-400 group-hover:text-sky-400 transition-colors duration-300" />
-				</div>
-				<span className="mt-2 text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300">
-					Socket.io
 				</span>
 			</div>
 			<div className="group flex flex-col items-center p-4 transition-all duration-300 transform hover:scale-105 hover:bg-gray-800/50 rounded-lg">
