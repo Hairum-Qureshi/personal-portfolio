@@ -9,7 +9,7 @@ export default function Navbar() {
 
 	return (
 		<nav className="text-white w-full lg:p-2 lg:mt-4">
-			<div className="flex text-base justify-around text-gray-400 border border-slate-800 rounded-md p-1 hidden lg:block space-x-13 text-center">
+			<div className="flex text-base justify-around text-gray-400 border border-slate-800 rounded-md p-1 lg:block space-x-13 text-center">
 				<Link
 					href="/"
 					className="font-semibold hover:text-gray-300 hover:cursor-pointer"
