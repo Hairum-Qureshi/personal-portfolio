@@ -78,7 +78,7 @@ export default function Home() {
 								<div className="flex items-center space-x-2">
 									<GiBrain className="text-2xl text-white/70" />
 									<span className="text-4xl font-semibold text-sky-500">
-										Next.js
+										Nest.js
 									</span>
 								</div>
 								<span className="text-sm font-medium text-gray-300/80 mt-[-5px]">
